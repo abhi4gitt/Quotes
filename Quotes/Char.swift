@@ -11,7 +11,7 @@ struct Char: Decodable {
     let name: String
     let birthday: String
     let occupations: [String]
-    let image: [URL]
+    let images: [URL]
     let aliases: [String]
     let status: String
     let portrayedBy: String
@@ -21,7 +21,7 @@ struct Char: Decodable {
         case name
         case birthday
         case occupations
-        case image
+        case images
         case aliases
         case status
         case portrayedBy
@@ -32,7 +32,7 @@ struct Char: Decodable {
         self.name = try container.decode(String.self, forKey: .name)
         self.birthday = try container.decode(String.self, forKey: .birthday)
         self.occupations = try container.decode([String].self, forKey: .occupations)
-        self.image = try container.decode([URL].self, forKey: .image)
+        self.images = try container.decode([URL].self, forKey: .images)
         self.aliases = try container.decode([String].self, forKey: .aliases)
         self.status = try container.decode(String.self, forKey: .status)
         self.portrayedBy = try container.decode(String.self, forKey: .portrayedBy)
