@@ -23,5 +23,5 @@ struct QuotesApp: App {
  ✅ On CharacterView, auto-scroll to bottom after status is shown
  - Fetch episode data
  ✅ Extend string to get rid of long images and color names
- - Create static constants for show names
+ ✅ Create static constants for show names
  */
