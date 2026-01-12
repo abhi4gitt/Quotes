@@ -15,7 +15,7 @@ struct CharacterView: View {
         ScrollViewReader { proxy in
             GeometryReader { geo in
                 ZStack (alignment: .top) {
-                    Image(show.lowercased().replacingOccurrences(of: " ", with: ""))
+                    Image(show.removeCaseAndSpace())
                         .resizable()
                         .scaledToFit()
                     
